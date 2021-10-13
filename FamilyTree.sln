@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyTree.Web", "FamilyTree.Web\FamilyTree.Web.csproj", "{17DCA63A-D07F-43E3-9F0E-B1E3A0A70A53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyTree.Shared", "FamilyTree.Shared\FamilyTree.Shared.csproj", "{AE32C7D2-E218-472E-93DF-18995AEAAA9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyTree.Tests", "FamilyTree.Tests\FamilyTree.Tests.csproj", "{FB2E4769-7437-4D07-8721-303882FC4A85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17DCA63A-D07F-43E3-9F0E-B1E3A0A70A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17DCA63A-D07F-43E3-9F0E-B1E3A0A70A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17DCA63A-D07F-43E3-9F0E-B1E3A0A70A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17DCA63A-D07F-43E3-9F0E-B1E3A0A70A53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE32C7D2-E218-472E-93DF-18995AEAAA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE32C7D2-E218-472E-93DF-18995AEAAA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE32C7D2-E218-472E-93DF-18995AEAAA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE32C7D2-E218-472E-93DF-18995AEAAA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2E4769-7437-4D07-8721-303882FC4A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2E4769-7437-4D07-8721-303882FC4A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2E4769-7437-4D07-8721-303882FC4A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2E4769-7437-4D07-8721-303882FC4A85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
