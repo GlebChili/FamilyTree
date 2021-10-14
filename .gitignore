@@ -452,3 +452,7 @@ $RECYCLE.BIN/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+FamilyTree.Web/wwwroot/css/style.css
+FamilyTree.Web/wwwroot/css/style.css.map
+FamilyTree.Web/wwwroot/js/bootstrap.bundle.min.js
+FamilyTree.Web/wwwroot/js/bootstrap.bundle.min.js.map

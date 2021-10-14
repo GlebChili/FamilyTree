@@ -13,7 +13,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\css\" />
+    <Watch Include="package-lock.json" />
+    <Watch Include="style.scss" />
   </ItemGroup>
+
+  <Target Name="GetNodeReady" BeforeTargets="Compile" />
+
+  <Target Name="NpmInstall" Inputs="package-lock.json" Outputs="obj/.npm_install" BeforeTargets="GetNodeReady">
+    <Exec Command="npm install" />
+    <Touch Files="obj/.npm_install" ForceTouch="true" AlwaysCreate="true" />
+  </Target>
+
+  <Target Name="CompileSASS" Inputs="package-lock.json;style.scss" Outputs="wwwroot/css/style.css" AfterTargets="GetNodeReady">
+    <Exec Command="npx sass style.scss wwwroot/css/style.css" />
+  </Target>
+
+  <Target Name="CopyBootstrapJS" Inputs="package-lock.json" Outputs="wwwroot/js/bootstrap.bundle.min.js" AfterTargets="GetNodeReady">
+    <Copy SourceFiles="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" DestinationFolder="wwwroot/js" />
+    <Copy SourceFiles="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map" DestinationFolder="wwwroot/js" />
+  </Target>
 
 </Project>
