@@ -1,9 +1,31 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <main>
-        <article class="content px-4 bg-primary">
-            @Body
-        </article>
-    </main>
+<div class="flex-column d-flex justify-content-between" style="min-height: 100vh;">
+
+<div class="flex-grow-1 d-flex flex-column">
+<header class="bg-primary d-flex justify-content-center text-white">
+    <a href="/" class="text-decoration-none text-white">
+        <h1 class="display-3">Семейное древо</h1>
+    </a>
+</header>
+
+<div class="row flex-grow-1" style="margin-right: 0;">
+    <div class="col d-flex">
+        <NavMenu />
+    </div>
+
+    <div class="col-10">
+        <main>
+            <article class="content px-4">
+                @Body
+            </article>
+        </main>
+    </div>
+</div>
+</div>
+
+<div class="d-flex justify-content-center bg-primary text-white">
+    <h6>Все материалы на сайте распостроняются по лицензии CC BY 4.0</h6>
+</div>
+
 </div>

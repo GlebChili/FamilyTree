@@ -1,4 +1,6 @@
-﻿@import "node_modules/bootstrap/scss/bootstrap.scss";
+﻿$primary: #d63384;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 h1:focus {
     outline: none;
@@ -31,4 +33,25 @@ h1:focus {
 
 .blazor-error-boundary::after {
     content: "An error has occurred."
+}
+
+.CustomNavMenu {
+    @extend .text-decoration-none;
+    @extend .text-center;
+}
+
+.CustomNavMenu div {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .mt-4;
+    @extend .rounded-3;
+    @extend .py-1;
+}
+
+.CustomNavMenuActive {
+    @extend .text-white;
+}
+
+.CustomNavMenuActive div {
+    @extend .bg-primary;
 }
